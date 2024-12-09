@@ -111,7 +111,7 @@ const BetCards = () => {
         </Button>
       </div>
       <CardFooter className="flex flex-col items-center w-full justify-around p-0 border-t border-gray-300 py-4">
-        <p className="flex flex-col items-center justify-center font-bold text-lg">
+        <p className="flex flex-col items-center justify-center font-bold text-lg mb-2">
           Will user and user match?
         </p>
         <div className="flex justify-around w-full">
