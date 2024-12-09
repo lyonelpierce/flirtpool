@@ -1,15 +1,6 @@
 import BetCards from "@/components/BetCards";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import UserCards from "@/components/UserCards";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: {
-    template: "%s | Flirtpool",
-    default: "Flirtpool",
-  },
-  description: "Flirtpool",
-};
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default async function Home() {
   return (
