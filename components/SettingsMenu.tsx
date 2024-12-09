@@ -8,9 +8,10 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { useState } from "react";
-import { MenuIcon } from "lucide-react";
+import { ChevronLeftIcon, MenuIcon } from "lucide-react";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const settingsMenu = [
   {
@@ -31,12 +32,24 @@ const SettingsMenu = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   const handleOpen = () => {
+    if (pathname !== "/") {
+      router.push("/");
+      return;
+    }
+
     setOpen(true);
   };
 
+  const pathname = usePathname();
+  const router = useRouter();
+
   return (
     <>
-      <MenuIcon onClick={handleOpen} />
+      {pathname !== "/" ? (
+        <ChevronLeftIcon onClick={handleOpen} />
+      ) : (
+        <MenuIcon onClick={handleOpen} />
+      )}
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetContent side="left" className="z-[60]">
           <SheetHeader className="items-start">
