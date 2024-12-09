@@ -5,7 +5,8 @@ const config: CapacitorConfig = {
   appName: "Flirtpool",
   // webDir: "public",
   server: {
-    url: "http://localhost:3000",
+    // url: "http://localhost:3000",
+    url: "https://flirtpool.vercel.app",
     cleartext: true,
   },
   ios: {
