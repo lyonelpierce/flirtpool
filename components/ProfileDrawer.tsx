@@ -9,8 +9,13 @@ import {
   SheetDescription,
 } from "./ui/sheet";
 import { cn } from "@/lib/utils";
-import { ChevronDown, ChevronUp, ImageIcon } from "lucide-react";
-import LikePassButtons from "./LikePassButtons";
+import {
+  CheckIcon,
+  ChevronDown,
+  ChevronUp,
+  ImageIcon,
+  XIcon,
+} from "lucide-react";
 
 const ProfileDrawer = () => {
   const [expanded, isExpanded] = useState<boolean>(false);
@@ -33,13 +38,25 @@ const ProfileDrawer = () => {
           )}
         </div>
         <SheetHeader className="flex items-start justify-start">
-          <SheetTitle className="text-2xl font-semibold">
-            User Profile
-          </SheetTitle>
-          <SheetDescription className="text-base">
-            User profile description
+          <div className="flex justify-between items-center w-full">
+            <SheetTitle className="text-2xl font-semibold">
+              User Profile
+            </SheetTitle>
+            <div className="flex justify-around gap-2">
+              <XIcon
+                className="size-12 text-red-600 border-2 border-gray-503 rounded-full p-2"
+                strokeWidth={4}
+              />
+              <CheckIcon
+                className="size-12 text-green-600 border-2 border-gray-300 rounded-full p-2"
+                strokeWidth={4}
+              />
+            </div>
+          </div>
+          <SheetDescription className="text-base text-start line-clamp-3">
+            User profile description, this is a long description test to see if
+            line clamp is working
           </SheetDescription>
-          {!expanded && <LikePassButtons />}
         </SheetHeader>
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/5] bg-gray-100 flex items-center justify-center">
@@ -82,11 +99,6 @@ const ProfileDrawer = () => {
             </p>
           </div>
         </div>
-        {expanded && (
-          <div className="flex justify-around w-full">
-            <LikePassButtons />
-          </div>
-        )}
       </SheetContent>
     </Sheet>
   );

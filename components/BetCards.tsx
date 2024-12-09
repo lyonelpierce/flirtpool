@@ -1,14 +1,17 @@
-import { CheckIcon, ChevronDown, ImageIcon, XIcon } from "lucide-react";
+import { ChevronDown, ImageIcon } from "lucide-react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "./ui/button";
 import LikePassButtons from "./LikePassButtons";
-
+import Link from "next/link";
 const BetCards = () => {
   return (
     <Card className="flex flex-1 flex-col items-center justify-between w-full h-[calc(100vh-176px)] overflow-hidden border-none shadow-none rounded-none">
       <div className="w-full px-4">
         <div className="grid grid-cols-2 gap-2 w-full">
-          <div id="userCard" className="flex flex-col gap-4 w-full">
+          <Link
+            href="/profile/1"
+            className="w-full h-full flex flex-1 flex-col gap-4"
+          >
             <CardContent className="flex flex-col items-center justify-center w-full relative bg-gray-200 h-60">
               <ImageIcon className="size-24 text-black p-2" strokeWidth={1} />
               <div className="absolute bottom-0 left-0 w-full p-4">
@@ -54,7 +57,7 @@ const BetCards = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
           <div id="userCard1" className="flex flex-col gap-4 w-full">
             <CardContent className="flex flex-col items-center justify-center w-full relative bg-gray-200 h-60">
               <ImageIcon className="size-24 text-black p-2" strokeWidth={1} />
