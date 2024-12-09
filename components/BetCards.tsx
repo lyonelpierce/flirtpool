@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import LikePassButtons from "./LikePassButtons";
+import LikePassButtons from "@/components/LikePassButtons";
 import { ChevronDown, ImageIcon } from "lucide-react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 

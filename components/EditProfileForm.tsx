@@ -11,9 +11,9 @@ import {
 } from "./ui/form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Textarea } from "./ui/textarea";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const formSchema = z.object({
   about: z

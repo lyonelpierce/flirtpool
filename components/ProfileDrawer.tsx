@@ -7,7 +7,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetDescription,
-} from "./ui/sheet";
+} from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import {
   CheckIcon,

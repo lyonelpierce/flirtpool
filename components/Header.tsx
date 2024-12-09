@@ -1,6 +1,6 @@
-import Logo from "./ui/logo";
+import Logo from "@/components/ui/logo";
 import { cn } from "@/lib/utils";
-import SettingsMenu from "./SettingsMenu";
+import SettingsMenu from "@/components/SettingsMenu";
 import { MessageCircleIcon } from "lucide-react";
 
 const Header = ({ isAndroid }: { isAndroid: boolean }) => {

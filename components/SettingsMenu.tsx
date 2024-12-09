@@ -8,10 +8,10 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { ChevronLeftIcon, MenuIcon } from "lucide-react";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 
 const settingsMenu = [
   {

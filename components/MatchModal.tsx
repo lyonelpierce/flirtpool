@@ -12,8 +12,6 @@ import {
   CredenzaTitle,
 } from "@/components/ui/credenza";
 import { useState } from "react";
-import { CheckIcon, ImageIcon, SendIcon } from "lucide-react";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import {
   Form,
   FormControl,
@@ -21,11 +19,13 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "./ui/form";
+} from "@/components/ui/form";
 import { useForm } from "react-hook-form";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Textarea } from "./ui/textarea";
-import { Button } from "./ui/button";
+import { CheckIcon, ImageIcon, SendIcon } from "lucide-react";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const messageSchema = z.object({
   message: z

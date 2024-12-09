@@ -1,7 +1,7 @@
-import { ImageIcon, XIcon } from "lucide-react";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import MatchModal from "./MatchModal";
 import Link from "next/link";
+import { ImageIcon, XIcon } from "lucide-react";
+import MatchModal from "@/components/MatchModal";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 const UserCards = () => {
   return (
