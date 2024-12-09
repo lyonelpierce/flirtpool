@@ -1,7 +1,7 @@
 import { ImageIcon } from "lucide-react";
 import EditProfileForm from "@/components/EditProfileForm";
 
-const ProfilePage = () => {
+const EditProfilePage = () => {
   return (
     <div className="flex flex-col h-full p-4 gap-4">
       <div className="grid grid-cols-3 gap-3">
@@ -23,4 +23,4 @@ const ProfilePage = () => {
   );
 };
 
-export default ProfilePage;
+export default EditProfilePage;

@@ -15,15 +15,15 @@ import Link from "next/link";
 const settingsMenu = [
   {
     label: "Match preferences",
-    url: "#",
+    url: "/match-preferences",
   },
   {
     label: "Edit Profile",
-    url: "#",
+    url: "/edit-profile",
   },
   {
     label: "Leaderboard",
-    url: "# ",
+    url: "/leaderboard",
   },
 ];
 

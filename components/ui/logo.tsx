@@ -1,8 +1,12 @@
+import Link from "next/link";
+
 const Logo = () => {
   return (
-    <h1 className="text-2xl font-bold uppercase">
-      <span>Flirt</span>Pool
-    </h1>
+    <Link href="/">
+      <h1 className="text-2xl font-bold uppercase">
+        <span>Flirt</span>Pool
+      </h1>
+    </Link>
   );
 };
 
