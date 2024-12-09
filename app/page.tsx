@@ -1,6 +1,6 @@
 import BetCards from "@/components/BetCards";
-import MatchCards from "@/components/MatchCards";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import UserCards from "@/components/UserCards";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         <BetCards />
       </TabsContent>
       <TabsContent value="match" className="flex-1 px-4">
-        <MatchCards />
+        <UserCards />
       </TabsContent>
     </Tabs>
   );
