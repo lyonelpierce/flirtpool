@@ -6,9 +6,9 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 const BetCards = () => {
   return (
-    <Card className="flex flex-1 flex-col items-center justify-between w-full h-full overflow-hidden border-none shadow-none rounded-none">
-      <div className="w-full px-4">
-        <div className="grid grid-cols-2 gap-2 w-full">
+    <Card className="flex flex-1 flex-col items-center justify-between w-full min-h-[calc(100vh-7rem)] overflow-hidden border-none shadow-none rounded-none">
+      <div className="w-full px-4 flex-1">
+        <div className="grid grid-cols-2 gap-2 w-full flex-1 h-full">
           <Link
             href="/profile/1"
             className="w-full h-full flex flex-1 flex-col gap-4"
@@ -118,7 +118,7 @@ const BetCards = () => {
           <ChevronDown className="size-4" />
         </Button>
       </div>
-      <CardFooter className="fixed bottom-0 left-0 flex flex-col items-center w-full justify-around p-0 bg-white border-t border-gray-300 py-4">
+      <CardFooter className="sticky bottom-0 left-0 flex flex-col items-center w-full justify-around p-0 bg-white border-t border-gray-300 py-4">
         <p className="flex flex-col items-center justify-center font-bold text-lg mb-2">
           Will user and user match?
         </p>

@@ -46,12 +46,12 @@ const PreferencesForm = () => {
           control={form.control}
           name="lookingFor"
           render={({ field }) => (
-            <FormItem className="flex justify-between items-center border px-2 rounded-md h-12">
+            <FormItem className="flex justify-between items-center border px-2 rounded-md h-12 space-y-0">
               <FormLabel className="font-semibold">Looking for</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className="w-32 border-none">
-                    <SelectValue placeholder="Select" />
+                  <SelectTrigger className="w-36 border-none">
+                    <SelectValue placeholder="Select interest" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
@@ -68,12 +68,12 @@ const PreferencesForm = () => {
           control={form.control}
           name="maxDistance"
           render={({ field }) => (
-            <FormItem className="flex justify-between items-center border px-2 rounded-md h-12">
+            <FormItem className="flex justify-between items-center border px-2 rounded-md h-12 space-y-0">
               <FormLabel className="font-semibold">Max distance</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className="w-32 border-none">
-                    <SelectValue placeholder="Select" />
+                  <SelectTrigger className="w-36 border-none">
+                    <SelectValue placeholder="Select distance" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
@@ -90,11 +90,11 @@ const PreferencesForm = () => {
           control={form.control}
           name="age"
           render={({ field }) => (
-            <FormItem className="flex justify-between items-center border px-2 rounded-md h-12">
+            <FormItem className="flex justify-between items-center border px-2 rounded-md h-12 space-y-0">
               <FormLabel className="font-semibold">Age</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className="w-32 border-none">
+                  <SelectTrigger className="w-36 border-none">
                     <SelectValue placeholder="Select age" />
                   </SelectTrigger>
                 </FormControl>
@@ -112,7 +112,7 @@ const PreferencesForm = () => {
           control={form.control}
           name="isPublic"
           render={({ field }) => (
-            <FormItem className="flex justify-between items-center border px-2 rounded-md h-12">
+            <FormItem className="flex justify-between items-center border px-2 rounded-md h-12 space-y-0">
               <FormLabel className="font-semibold">Public Profile</FormLabel>
               <Switch onCheckedChange={field.onChange} defaultChecked={true} />
               <FormMessage />
