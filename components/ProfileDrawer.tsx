@@ -25,8 +25,8 @@ const ProfileDrawer = () => {
       <SheetContent
         side="bottom"
         className={cn(
-          "flex flex-col w-full h-[25vh] border border-gray-300 rounded-2xl transition-all ease-in-out duration-300 [&>button]:hidden z-[99999]",
-          !expanded ? "h-[25vh]" : "h-[65vh]"
+          "flex flex-col w-full h-[25vh] border border-gray-300 rounded-2xl transition-all ease-in-out duration-300 [&>button]:hidden z-[50]",
+          !expanded ? "h-[25vh]" : "h-[70vh]"
         )}
         onInteractOutside={() => isExpanded(false)}
       >

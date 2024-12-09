@@ -38,7 +38,7 @@ const SettingsMenu = () => {
     <>
       <MenuIcon onClick={handleOpen} />
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="left">
+        <SheetContent side="left" className="z-[60]">
           <SheetHeader className="items-start">
             <SheetTitle>Settings</SheetTitle>
             <VisuallyHidden>

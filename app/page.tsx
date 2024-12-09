@@ -1,8 +1,17 @@
 import BetCards from "@/components/BetCards";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import UserCards from "@/components/UserCards";
+import { Metadata } from "next";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: {
+    template: "%s | Flirtpool",
+    default: "Flirtpool",
+  },
+  description: "Flirtpool",
+};
+
+export default async function Home() {
   return (
     <Tabs defaultValue="bet" className="h-full w-full flex flex-col pt-12">
       <TabsList className="fixed top-0 left-0 mt-16 flex w-full h-12 border-b border-gray-300 bg-white p-0 z-10">

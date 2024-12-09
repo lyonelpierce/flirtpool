@@ -8,6 +8,9 @@ const config: CapacitorConfig = {
     url: "http://localhost:3000",
     cleartext: true,
   },
+  ios: {
+    scheme: "Flirtpool",
+  },
 };
 
 export default config;

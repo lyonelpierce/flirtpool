@@ -5,18 +5,18 @@ import LikePassButtons from "./LikePassButtons";
 import Link from "next/link";
 const BetCards = () => {
   return (
-    <Card className="flex flex-1 flex-col items-center justify-between w-full h-[calc(100vh-176px)] overflow-hidden border-none shadow-none rounded-none">
+    <Card className="flex flex-1 flex-col items-center justify-between w-full h-full overflow-hidden border-none shadow-none rounded-none">
       <div className="w-full px-4">
         <div className="grid grid-cols-2 gap-2 w-full">
           <Link
             href="/profile/1"
             className="w-full h-full flex flex-1 flex-col gap-4"
           >
-            <CardContent className="flex flex-col items-center justify-center w-full relative bg-gray-200 h-60">
-              <ImageIcon className="size-24 text-black p-2" strokeWidth={1} />
+            <CardContent className="flex flex-col items-center justify-center relative bg-gray-200 h-44 w-full">
+              <ImageIcon className="size-16 text-black p-2" strokeWidth={1} />
               <div className="absolute bottom-0 left-0 w-full p-4">
                 <p className="text-black uppercase font-bold text-sm">
-                  User Name{" "}
+                  Name,
                   <span className="text-gray-500 ml-2 font-semibold">Age</span>
                 </p>
               </div>
@@ -59,11 +59,11 @@ const BetCards = () => {
             </div>
           </Link>
           <div id="userCard1" className="flex flex-col gap-4 w-full">
-            <CardContent className="flex flex-col items-center justify-center w-full relative bg-gray-200 h-60">
-              <ImageIcon className="size-24 text-black p-2" strokeWidth={1} />
+            <CardContent className="flex flex-col items-center justify-center relative bg-gray-200 h-44 w-full">
+              <ImageIcon className="size-16 text-black p-2" strokeWidth={1} />
               <div className="absolute bottom-0 left-0 w-full p-4">
                 <p className="text-black uppercase font-bold text-sm">
-                  User Name{" "}
+                  Name,
                   <span className="text-gray-500 ml-2 font-semibold">Age</span>
                 </p>
               </div>
@@ -107,14 +107,14 @@ const BetCards = () => {
           </div>
         </div>
         <Button
-          className="w-full rounded-full uppercase mt-6"
+          className="w-full rounded-full uppercase mt-4"
           variant="outline"
         >
           See More
           <ChevronDown className="size-4" />
         </Button>
       </div>
-      <CardFooter className="flex flex-col items-center w-full justify-around p-0 border-t border-gray-300 py-4">
+      <CardFooter className="fixed bottom-0 left-0 flex flex-col items-center w-full justify-around p-0 bg-white border-t border-gray-300 py-4">
         <p className="flex flex-col items-center justify-center font-bold text-lg mb-2">
           Will user and user match?
         </p>
