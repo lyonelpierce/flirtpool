@@ -4,7 +4,7 @@ import UserCards from "@/components/UserCards";
 
 export default function Home() {
   return (
-    <Tabs defaultValue="bet" className="h-full w-full flex flex-col">
+    <Tabs defaultValue="bet" className="h-full w-full flex flex-col pt-12">
       <TabsList className="fixed top-0 left-0 mt-16 flex w-full h-12 border-b border-gray-300 bg-white p-0 z-10">
         <TabsTrigger
           value="bet"
