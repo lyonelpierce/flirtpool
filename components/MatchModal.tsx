@@ -71,7 +71,7 @@ const MatchModal = () => {
             <div className="flex flex-1 flex-col items-center justify-center w-full h-96 relative bg-gray-200 mt-3">
               <ImageIcon className="size-48 text-black p-2" strokeWidth={1} />
               <div className="absolute bottom-0 left-0 w-full p-4 flex items-center justify-center">
-                <p className="text-black uppercase font-black text-4xl">
+                <p className="text-black uppercase font-black text-3xl">
                   YOU MATCH!
                 </p>
               </div>
